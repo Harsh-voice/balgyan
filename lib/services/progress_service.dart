@@ -38,7 +38,29 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
-  // --- Parent-facing quiz stats (never shown to the child) ---
+  // --- Exploration progress (drives the tile progress bars) ---
+
+  Set<String> _viewed(String moduleId) =>
+      ((_box.get('viewed_$moduleId', defaultValue: const <dynamic>[]) as List)
+          .cast<String>()).toSet();
+
+  int viewedCount(String moduleId) => _viewed(moduleId).length;
+
+  Future<void> markViewed(String moduleId, String itemId) async {
+    final viewed = _viewed(moduleId);
+    if (viewed.add(itemId)) {
+      await _box.put('viewed_$moduleId', viewed.toList());
+      notifyListeners();
+    }
+  }
+
+  // --- Quiz stats & stars ---
+
+  /// Total stars = every correct quiz answer ever. Shown in the home header;
+  /// per-module detail lives in the Parent Zone.
+  int get stars =>
+      _box.keys.whereType<String>().where((k) => k.endsWith('_correct')).fold(
+          0, (sum, k) => sum + (_box.get(k, defaultValue: 0) as int));
 
   int quizCorrect(String moduleId) =>
       _box.get('quiz_${moduleId}_correct', defaultValue: 0) as int;

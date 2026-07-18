@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import '../models/lesson_item.dart';
 import '../services/audio_service.dart';
 import '../services/content_loader.dart';
+import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../widgets/lesson_card.dart';
 import '../widgets/squish_button.dart';
@@ -11,18 +12,25 @@ import '../widgets/squish_button.dart';
 /// One letter/number per page: auto-plays audio on entry, tap the card to
 /// replay, swipe or use the chunky arrows to move.
 class LessonScreen extends StatefulWidget {
-  const LessonScreen({super.key, required this.module});
+  const LessonScreen({super.key, required this.module, this.initialIndex = 0});
 
   final Module module;
+
+  /// Where to open — the "Letter of the Day" card jumps straight to today's
+  /// letter instead of always starting at A.
+  final int initialIndex;
 
   @override
   State<LessonScreen> createState() => _LessonScreenState();
 }
 
 class _LessonScreenState extends State<LessonScreen> {
-  final _pageController = PageController(viewportFraction: 0.92);
+  late final _pageController = PageController(
+    viewportFraction: 0.92,
+    initialPage: widget.initialIndex,
+  );
   List<LessonItem>? _items;
-  int _index = 0;
+  late int _index = widget.initialIndex;
 
   @override
   void initState() {
@@ -33,6 +41,7 @@ class _LessonScreenState extends State<LessonScreen> {
   Future<void> _load() async {
     final items = await context.read<ContentLoader>().load(widget.module);
     if (!mounted) return;
+    if (widget.initialIndex >= items.length) _index = 0;
     setState(() => _items = items);
     _playCurrent();
   }
@@ -40,7 +49,9 @@ class _LessonScreenState extends State<LessonScreen> {
   void _playCurrent() {
     final items = _items;
     if (items == null) return;
-    context.read<AudioService>().playLesson(items[_index].audioFile);
+    final item = items[_index];
+    context.read<AudioService>().playLesson(item.audioFile);
+    context.read<ProgressService>().markViewed(widget.module.id, item.id);
   }
 
   void _goTo(int page) {

@@ -5,6 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:balgyan/models/language.dart';
 import 'package:balgyan/models/lesson_item.dart';
+import 'package:balgyan/services/daily_pick.dart';
 
 void main() {
   List<LessonItem> loadContent(String path) {
@@ -44,6 +45,17 @@ void main() {
         );
       }
     }
+  });
+
+  test('letter of the day is stable within a day and rotates daily', () {
+    final morning = DateTime(2026, 7, 18, 6);
+    final night = DateTime(2026, 7, 18, 23, 59);
+    final tomorrow = DateTime(2026, 7, 19, 0, 1);
+
+    expect(dailyIndex(morning, 26), dailyIndex(night, 26));
+    expect(dailyIndex(tomorrow, 26), (dailyIndex(morning, 26) + 1) % 26);
+    expect(dailyIndex(morning, 26), inInclusiveRange(0, 25));
+    expect(dailyIndex(morning, 0), 0); // never crashes on empty content
   });
 
   test('language codes round-trip and unknown code falls back to English', () {
