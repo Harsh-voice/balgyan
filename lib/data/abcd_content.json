@@ -1,0 +1,210 @@
+[
+  {
+    "id": "letter_a",
+    "type": "letter",
+    "displayText": "A",
+    "imageAsset": "assets/images/letters/a.png",
+    "audioFile": "a.m4a",
+    "order": 1
+  },
+  {
+    "id": "letter_b",
+    "type": "letter",
+    "displayText": "B",
+    "imageAsset": "assets/images/letters/b.png",
+    "audioFile": "b.m4a",
+    "order": 2
+  },
+  {
+    "id": "letter_c",
+    "type": "letter",
+    "displayText": "C",
+    "imageAsset": "assets/images/letters/c.png",
+    "audioFile": "c.m4a",
+    "order": 3
+  },
+  {
+    "id": "letter_d",
+    "type": "letter",
+    "displayText": "D",
+    "imageAsset": "assets/images/letters/d.png",
+    "audioFile": "d.m4a",
+    "order": 4
+  },
+  {
+    "id": "letter_e",
+    "type": "letter",
+    "displayText": "E",
+    "imageAsset": "assets/images/letters/e.png",
+    "audioFile": "e.m4a",
+    "order": 5
+  },
+  {
+    "id": "letter_f",
+    "type": "letter",
+    "displayText": "F",
+    "imageAsset": "assets/images/letters/f.png",
+    "audioFile": "f.m4a",
+    "order": 6
+  },
+  {
+    "id": "letter_g",
+    "type": "letter",
+    "displayText": "G",
+    "imageAsset": "assets/images/letters/g.png",
+    "audioFile": "g.m4a",
+    "order": 7
+  },
+  {
+    "id": "letter_h",
+    "type": "letter",
+    "displayText": "H",
+    "imageAsset": "assets/images/letters/h.png",
+    "audioFile": "h.m4a",
+    "order": 8
+  },
+  {
+    "id": "letter_i",
+    "type": "letter",
+    "displayText": "I",
+    "imageAsset": "assets/images/letters/i.png",
+    "audioFile": "i.m4a",
+    "order": 9
+  },
+  {
+    "id": "letter_j",
+    "type": "letter",
+    "displayText": "J",
+    "imageAsset": "assets/images/letters/j.png",
+    "audioFile": "j.m4a",
+    "order": 10
+  },
+  {
+    "id": "letter_k",
+    "type": "letter",
+    "displayText": "K",
+    "imageAsset": "assets/images/letters/k.png",
+    "audioFile": "k.m4a",
+    "order": 11
+  },
+  {
+    "id": "letter_l",
+    "type": "letter",
+    "displayText": "L",
+    "imageAsset": "assets/images/letters/l.png",
+    "audioFile": "l.m4a",
+    "order": 12
+  },
+  {
+    "id": "letter_m",
+    "type": "letter",
+    "displayText": "M",
+    "imageAsset": "assets/images/letters/m.png",
+    "audioFile": "m.m4a",
+    "order": 13
+  },
+  {
+    "id": "letter_n",
+    "type": "letter",
+    "displayText": "N",
+    "imageAsset": "assets/images/letters/n.png",
+    "audioFile": "n.m4a",
+    "order": 14
+  },
+  {
+    "id": "letter_o",
+    "type": "letter",
+    "displayText": "O",
+    "imageAsset": "assets/images/letters/o.png",
+    "audioFile": "o.m4a",
+    "order": 15
+  },
+  {
+    "id": "letter_p",
+    "type": "letter",
+    "displayText": "P",
+    "imageAsset": "assets/images/letters/p.png",
+    "audioFile": "p.m4a",
+    "order": 16
+  },
+  {
+    "id": "letter_q",
+    "type": "letter",
+    "displayText": "Q",
+    "imageAsset": "assets/images/letters/q.png",
+    "audioFile": "q.m4a",
+    "order": 17
+  },
+  {
+    "id": "letter_r",
+    "type": "letter",
+    "displayText": "R",
+    "imageAsset": "assets/images/letters/r.png",
+    "audioFile": "r.m4a",
+    "order": 18
+  },
+  {
+    "id": "letter_s",
+    "type": "letter",
+    "displayText": "S",
+    "imageAsset": "assets/images/letters/s.png",
+    "audioFile": "s.m4a",
+    "order": 19
+  },
+  {
+    "id": "letter_t",
+    "type": "letter",
+    "displayText": "T",
+    "imageAsset": "assets/images/letters/t.png",
+    "audioFile": "t.m4a",
+    "order": 20
+  },
+  {
+    "id": "letter_u",
+    "type": "letter",
+    "displayText": "U",
+    "imageAsset": "assets/images/letters/u.png",
+    "audioFile": "u.m4a",
+    "order": 21
+  },
+  {
+    "id": "letter_v",
+    "type": "letter",
+    "displayText": "V",
+    "imageAsset": "assets/images/letters/v.png",
+    "audioFile": "v.m4a",
+    "order": 22
+  },
+  {
+    "id": "letter_w",
+    "type": "letter",
+    "displayText": "W",
+    "imageAsset": "assets/images/letters/w.png",
+    "audioFile": "w.m4a",
+    "order": 23
+  },
+  {
+    "id": "letter_x",
+    "type": "letter",
+    "displayText": "X",
+    "imageAsset": "assets/images/letters/x.png",
+    "audioFile": "x.m4a",
+    "order": 24
+  },
+  {
+    "id": "letter_y",
+    "type": "letter",
+    "displayText": "Y",
+    "imageAsset": "assets/images/letters/y.png",
+    "audioFile": "y.m4a",
+    "order": 25
+  },
+  {
+    "id": "letter_z",
+    "type": "letter",
+    "displayText": "Z",
+    "imageAsset": "assets/images/letters/z.png",
+    "audioFile": "z.m4a",
+    "order": 26
+  }
+]

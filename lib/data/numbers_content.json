@@ -1,0 +1,82 @@
+[
+  {
+    "id": "number_1",
+    "type": "number",
+    "displayText": "1",
+    "imageAsset": "assets/images/numbers/1.png",
+    "audioFile": "num_1.m4a",
+    "order": 1
+  },
+  {
+    "id": "number_2",
+    "type": "number",
+    "displayText": "2",
+    "imageAsset": "assets/images/numbers/2.png",
+    "audioFile": "num_2.m4a",
+    "order": 2
+  },
+  {
+    "id": "number_3",
+    "type": "number",
+    "displayText": "3",
+    "imageAsset": "assets/images/numbers/3.png",
+    "audioFile": "num_3.m4a",
+    "order": 3
+  },
+  {
+    "id": "number_4",
+    "type": "number",
+    "displayText": "4",
+    "imageAsset": "assets/images/numbers/4.png",
+    "audioFile": "num_4.m4a",
+    "order": 4
+  },
+  {
+    "id": "number_5",
+    "type": "number",
+    "displayText": "5",
+    "imageAsset": "assets/images/numbers/5.png",
+    "audioFile": "num_5.m4a",
+    "order": 5
+  },
+  {
+    "id": "number_6",
+    "type": "number",
+    "displayText": "6",
+    "imageAsset": "assets/images/numbers/6.png",
+    "audioFile": "num_6.m4a",
+    "order": 6
+  },
+  {
+    "id": "number_7",
+    "type": "number",
+    "displayText": "7",
+    "imageAsset": "assets/images/numbers/7.png",
+    "audioFile": "num_7.m4a",
+    "order": 7
+  },
+  {
+    "id": "number_8",
+    "type": "number",
+    "displayText": "8",
+    "imageAsset": "assets/images/numbers/8.png",
+    "audioFile": "num_8.m4a",
+    "order": 8
+  },
+  {
+    "id": "number_9",
+    "type": "number",
+    "displayText": "9",
+    "imageAsset": "assets/images/numbers/9.png",
+    "audioFile": "num_9.m4a",
+    "order": 9
+  },
+  {
+    "id": "number_10",
+    "type": "number",
+    "displayText": "10",
+    "imageAsset": "assets/images/numbers/10.png",
+    "audioFile": "num_10.m4a",
+    "order": 10
+  }
+]

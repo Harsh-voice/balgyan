@@ -1,0 +1,47 @@
+name: balgyan
+description: "Trilingual (Hindi/Marathi/English) offline-first learning app for toddlers."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  just_audio: ^0.9.42
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/data/abcd_content.json
+    - lib/data/numbers_content.json
+    - assets/audio/hi/
+    - assets/audio/mr/
+    - assets/audio/en/
+    - assets/audio/fx/
+    - assets/images/letters/
+    - assets/images/numbers/
+    - assets/icons/
+
+  fonts:
+    - family: Baloo2
+      fonts:
+        - asset: assets/fonts/Baloo2.ttf
